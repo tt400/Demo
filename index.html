@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<? php
+   $num = 20; // Variable num has a global scope
+ 
+function demo() {
+ // By calling variable num inside the function will not get expected result
+    echo "Value of num inside the function demo() is: $num <br>";
+} 
+    demo();
+
+    echo "Value of num outside the function demo() is: $num";
+?>
+</body>
+</html>
